@@ -1,0 +1,57 @@
+.cointainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.tab {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+/* .tab-icon{
+    position: relative;
+} */
+.tab_item {
+    opacity: .4;
+    color: red;
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+    transition: all 0.5s ease;
+    min-width: 80px;
+  padding: 16px 20px 11px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+  }
+.tab_item.active{
+    opacity: 1;
+}
+
+.tab-content_item.active{
+    display: block !important;
+}
+
+.tab-content{
+    margin: 20px 0;
+}
+.tab-content_item {
+    display: none;
+}
+.tab .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: red;
+    transition: all 0.2s ease;
+  }
